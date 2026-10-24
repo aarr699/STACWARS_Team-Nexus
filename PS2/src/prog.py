@@ -35,8 +35,47 @@ def a1():
 
     plt.show()
 
+
 def a2():
-    fig, ax = plt.subplots()
+    fig, ax = plt.subplots(ncols=2)
+
+    for d in dfn:
+        #Temperature vs Radiation
+        ax[0].scatter(
+            d["Radiation"],
+            d["Temperature"],
+            c=d["Normalised_Hours"],
+            cmap="plasma",
+            vmin=0,
+            vmax=24,
+            alpha=0.7,
+            s=1,
+        )
+
+        #Humidity vs Radiation
+        ax[1].scatter(
+            d["Radiation"],
+            d["Humidity"],
+            c=d["Normalised_Hours"],
+            cmap="viridis",
+            vmin=0,
+            vmax=24,
+            alpha=0.2,
+            s=1,
+        )
+
+    ax[0].set_xlabel("Radiation")
+    ax[0].set_ylabel("Temperature")
+    ax[0].set_title("Radiation vs. Temperature Correlation")
+    ax[0].grid(True, linestyle="--", alpha=0.5)
+
+    ax[1].set_xlabel("Radiation")
+    ax[1].set_ylabel("Humidity")
+    ax[1].set_title("Radiation vs. Temperature Correlation")
+    ax[1].grid(True, linestyle="--", alpha=0.5)
+
+    plt.tight_layout()
+    plt.show()
 
 
 a1()
