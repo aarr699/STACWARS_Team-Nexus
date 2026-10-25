@@ -1,6 +1,6 @@
 import pandas as pd
 
-solar_data = pd.read_csv("SolarPrediction.csv")
+solar_data = pd.read_csv("data\\SolarPrediction.csv")
 
 solar_data['Date and Time'] = pd.to_datetime(solar_data['Data'].astype(str) + ' ' + solar_data['Time'].astype(str))
 

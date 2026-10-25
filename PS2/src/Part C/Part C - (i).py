@@ -1,6 +1,6 @@
 import pandas as pd
 
-solar_data=pd.read_csv("SolarPrediction.csv")
+solar_data=pd.read_csv("data\\SolarPrediction.csv")
 
 solar_data = solar_data.astype(str).replace(r' 12:00:00 AM$', '', regex=True)
 
