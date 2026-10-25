@@ -43,7 +43,7 @@ graph.figure(figsize=(10, 6))
 
 graph.plot(solar_predict[0], label='Actual Radiation', color='blue', linewidth=1.5)
 graph.plot(solar_predict[1], label='Predicted Radiation', color='red', linewidth=1.5)
-graph.plot(solar_predict[2], label='Error Margin', color='green', linewidth=1.5)
+graph.plot(solar_predict[2], label='Error Margin', color='green', linewidth=1.5,alpha=0.5)
 
 graph.title('Plot Comparing the Regression Model Predictions to the Actual Radiation', fontsize=14, fontweight='bold')
 graph.xlabel('', fontsize=12)
