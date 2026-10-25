@@ -1,2 +1,8 @@
-#Team Nexus STAC WARS Submission Repo
-We have attempted PS1
+# Team Nexus STAC WARS Submission Repository
+## We have attempted PS1, PS2 and PS3.
+
+Our solution to Problem Statement 1 focuses on designing and simulating a lightweight, dual-stage rocket capable of reaching an apogee of 4000 m under the specified environmental conditions of Planet Mustafar. The rocket incorporates an inline staging mechanism, clipped-delta fins with a cant angle to counteract wind effects, and a dual-parachute recovery system for safe descent. Using OpenRocket, we evaluated the rocket's flight trajectory, velocity, stability, and recovery performance, while comparing its behaviour under Earth and Mustafar conditions.
+
+The Random Forest Regressor model was tested on individual parameters input separately, and the results, i.e. the values of RMSE and R² show us that, by far, Temperature and Time are the parameters that relatively are the most accurate for training the models. Although the other parameters like Pressure and Humidity help refine the model when all the parameters are passed together, individually, they contribute very negligibly to the model's predictions.
+
+We used the data provided for the 3 planets to calculate their size, orbital distance, their host star's habitable zone and the planets' equilibrium temperatures. Using that data we determined what planet would be the most habitable for Princess Leia and the rebels. Anomalous Data differing from the usual time period of the planet was not included in the calculations. Several scientific approximations were used in the data and therefore, are not a hundred percent accurate, especially the planet equilibrium temperatures.
