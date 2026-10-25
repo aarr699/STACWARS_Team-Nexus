@@ -6,3 +6,11 @@ Our solution to Problem Statement 1 focuses on designing and simulating a lightw
 The Random Forest Regressor model was tested on individual parameters input separately, and the results, i.e. the values of RMSE and R² show us that, by far, Temperature and Time are the parameters that relatively are the most accurate for training the models. Although the other parameters like Pressure and Humidity help refine the model when all the parameters are passed together, individually, they contribute very negligibly to the model's predictions.
 
 We used the data provided for the 3 planets to calculate their size, orbital distance, their host star's habitable zone and the planets' equilibrium temperatures. Using that data we determined what planet would be the most habitable for Princess Leia and the rebels. Anomalous Data differing from the usual time period of the planet was not included in the calculations. Several scientific approximations were used in the data and therefore, are not a hundred percent accurate, especially the planet equilibrium temperatures.
+
+
+File structure:
+Each PS has its own folder
+PS 2 has 2 folders: data and src
+all python files are in src
+
+PS. Part D has our regression model. Install scikit via pip. On Windows machines, Windows defender may block the program while training. Add an exclusion in windows defender for the folder PS2.
